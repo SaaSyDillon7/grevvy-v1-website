@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GREVVY Version 1 - Quantum AI HubSpot Solutions
 
-## Getting Started
+[![Built with Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8)](https://tailwindcss.com/)
 
-First, run the development server:
+🚀 **Transform your HubSpot into an AI powerhouse** with quantum-powered automation and leadership-guided intelligence.
+
+**Live Site:** https://grevvy.com (pending deployment)
+**Repository:** https://github.com/SaaSyDillon7/grevvy-v1-website
+
+## 🌟 Features
+
+### Design & UX
+- **Particle Background Animation** - Quantum-inspired floating particles with RAF optimization
+- **Glassmorphism UI** - Modern frosted glass effects throughout
+- **Gradient System** - Purple/Cyan brand gradients with smooth transitions
+- **Smooth Scroll Navigation** - Section-based navigation
+- **Fully Responsive** - Mobile-first approach with optimized layouts
+
+### Complete Single-Page Website
+1. **Hero Section** - Animated badge, gradient text, dual CTAs
+2. **Value Proposition** - 3 core benefits with hover animations
+3. **Services Overview** - GREVVY ONBOARD & AI subscription cards
+4. **Interactive Workflow Demo** - Auto-playing 3-step process
+5. **Results Metrics** - Animated count-up (280% ROI, 14 days to value)
+6. **Case Studies** - 3 detailed success stories with metrics
+7. **Pricing** - DIY vs DFY toggle with 8 pricing tiers
+8. **FAQ Accordion** - 7 common questions
+9. **Final CTA** - Trust badges and social proof
+10. **Footer** - Links, social media, branding
+
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deploy to Cloudflare Pages (grevvy.com)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Build the site
+npm run build
 
-## Learn More
+# Deploy with Wrangler
+wrangler pages deploy .next --project-name=grevvy-website
 
-To learn more about Next.js, take a look at the following resources:
+# Configure custom domain in Cloudflare Dashboard
+# Pages → grevvy-website → Custom domains → Add grevvy.com
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 16** - React framework with App Router
+- **TypeScript 5.6** - Type-safe development
+- **Tailwind CSS v4** - Utility-first styling with custom theme
+- **Lucide React** - Beautiful icon library
+- **Framer Motion** - Advanced animations
+- **React Intersection Observer** - Scroll-triggered effects
 
-## Deploy on Vercel
+## 🎨 Brand System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Colors:**
+- Purple: #a855f7 (primary)
+- Cyan: #22d3ee (secondary)
+- Supporting: Pink, Blue, Green, Yellow
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Gradients:**
+- Brand: Purple → Cyan
+- Hero BG: Dark slate → Purple → Dark slate
+- Text: White → Purple-200 → Cyan-200
+
+## 🔐 Environment Variables
+
+Configured in `.env.local`:
+- Supabase (database & auth)
+- HubSpot API (Portal ID: 49043992)
+- Stripe (payments)
+- Meeting booking links
+
+## 📁 Project Structure
+
+```
+app/              # Next.js app directory
+├── globals.css   # Tailwind + custom styles
+├── layout.tsx    # Root layout with SEO
+├── page.tsx      # Main single-page site
+├── robots.ts     # SEO robots config
+└── sitemap.ts    # Sitemap generation
+
+components/       # React components
+├── ParticleBackground.tsx
+├── Navigation.tsx
+├── Hero.tsx
+├── ValueProposition.tsx
+├── ServicesOverview.tsx
+├── HowItWorks.tsx
+├── Results.tsx
+├── CaseStudies.tsx
+├── Pricing.tsx
+├── FAQ.tsx
+├── FinalCTA.tsx
+└── Footer.tsx
+```
+
+## 🎯 Next Steps
+
+1. **Add Brand Assets** - Place logos in `public/` directory
+2. **Connect Forms** - Integrate HubSpot forms for lead capture
+3. **Deploy to Production** - Use Cloudflare Pages for grevvy.com
+4. **Add Analytics** - Google Analytics 4 + HubSpot tracking
+5. **Optimize Assets** - Add OG images and optimize fonts
+
+## 🤖 Built with Claude Code
+
+This project was generated using [Claude Code](https://claude.com/claude-code).
+
+© 2025 GREVVY LLC. All rights reserved.
